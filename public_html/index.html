@@ -1,0 +1,100 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <title>Mikado School</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />-->
+
+    <LINK href="css/mikado.css" rel="stylesheet" type="text/css">
+    <LINK href="css/animate-custom.css" rel="stylesheet" type="text/css">
+
+
+    <link rel="shortcut icon" href="images\logo.png">
+
+
+    <script>
+
+        var rotate = false;
+        var img_set = 1;
+        var newImage;
+
+
+        function loadData(value) {
+            document.getElementById('home_div').style.display = "none";
+            document.getElementById('aboutUs_div').style.display = "none";
+            document.getElementById('gallary_div').style.display = "none";
+            document.getElementById('keyFeatures_div').style.display = "none";
+            document.getElementById('contactUs_div').style.display = "none";
+            document.getElementById('ourMission_div').style.display = "none";
+
+            document.getElementById(value).style.display = "block";
+        }
+
+        function setbackGround() {
+            img_set = Math.floor((Math.random() * 6) + 1);
+            newImage = 'url(images//' + img_set + '.jpg)';
+            document.body.style.backgroundImage = newImage;
+        }
+    </script>
+
+    <body id="page" onload="setbackGround();">
+        <div class="header">
+            <div class="footer_left">
+                <img src="images//mikado.png" height="150px" width="350px"/>
+            </div>
+
+            <a href="#" onclick="loadData('aboutUs_div');"> About us </a>
+            <a href="#" onclick="loadData('contactUs_div');"> Contact us </a>
+            <a href="#" onclick="loadData('keyFeatures_div');"> Key features </a>
+            <a href="#" onclick="loadData('gallary_div');"> Gallery </a>
+
+            <a href="#" onclick="loadData('ourMission_div');"> Our mission </a>
+            <a href="#" onclick="loadData('home_div');"> Home </a>
+
+        </div>
+        <div class="body">
+            <div id="home_div" class="rightBody animated fadeIn" >
+                Home
+            </div>
+            <div id="ourMission_div" class="rightBody animated fadeIn" style="display: none">
+                Our mission
+            </div>
+            <div id="gallary_div" class="rightBody animated fadeIn" style="display: none">
+                Gallary
+            </div>
+            <div id="keyFeatures_div" class="rightBody animated fadeIn" style="display: none">
+                Key features
+            </div>
+            <div id="contactUs_div" class="rightBody animated fadeIn" style="display: none">
+                Contact us
+            </div>
+            <div id="aboutUs_div" class="rightBody animated fadeIn" style="display: none">
+                about us
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_right">
+                <br>
+                <p class="footer_address">100 Feet Road, Opp. Mahila Ahinsa Prashikhan Kendra
+                    <br>Near Sobhagpura Circle, Udaipur
+                </p>
+            </div>
+            <div id="copyright">
+                <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="index.html">mikadoeducation.co.in</a></p>
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/MikadoKids&show_faces=false"
+                        scrolling="no" frameborder="0" class="fb" ></iframe>
+                <p class="fl_right">Created by<a href="https://www.facebook.com/vikkychhajer" class="textLink" target="_blank">Vikky Chhajer</a></p>
+                <br class="clear" />
+            </div>
+
+        </div>
+
+    </body>
+</html>

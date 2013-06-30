@@ -1,0 +1,244 @@
+/*
+    Document   : mikado
+    Created on : Jun 15, 2013, 8:28:52 PM
+    Author     : vikky chhajer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root {
+    /*    height: 100%;*/
+    display: block;
+}
+
+html{
+    height: 100%;
+    /*        width: 100%;*/
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background-repeat: round;
+    background-position-x: right;
+    background-position-y: right;
+
+    height: 100%;
+    width: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /*    -webkit-background-size: contain;  Safari and Chrome
+        -moz-background-size: contain;  Firefox
+        -ms-background-size: contain;  Internet Explorer
+        -o-background-size: contain;  Opera
+        background-size: contain;  CSS3 */
+}
+
+.body{
+    /*    width:100%;*/
+    margin-left: 20px;
+    height: 63%;
+    /*    background: white;*/
+}
+
+.body h2{
+    width:5%;
+    color: red;
+    overflow: auto;
+}
+
+.body h2:hover{
+
+    width: 100%;
+    background: orange;
+
+}
+.footer{
+
+    /*    text-shadow: 1px 1px 2px aqua;*/
+    text-align: center;
+    color:white;
+    font-family: Timer new roman;
+    font-size: 20px;
+    opacity:0.7;
+    height: 17%;
+    /*    width: 100%;*/
+    background: #06599F;
+    -webkit-border-top-left-radius: 69%;
+    -webkit-border-top-right-radius: 29%;
+    -moz-border-radius-topleft: 69%;
+    -moz-border-radius-topright: 29%;
+    border-top-left-radius: 69%;
+    border-top-right-radius: 29%;
+    /*        border-color: white;
+            border-style: solid;
+            border-width: 1px;*/
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color:red;
+}
+
+
+.footer:hover{
+
+    /*    opacity:1;*/
+}
+
+.footer_address{
+}
+
+.leftBody{
+    height: 85%;
+    float:left;
+    width:20%;
+    background: orange;
+    opacity:0.8;
+
+    border-color: red;
+    border-width: 10px;
+    border-style: solid;
+
+    -webkit-border-top-left-radius: 50px;
+    -webkit-border-bottom-left-radius: 50px;
+    -moz-border-radius-topleft: 50px;
+    -moz-border-radius-bottomleft: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+.rightBody{
+    height: 80%;
+    float:right;
+    width:75.15%;
+    padding:10px 20px;
+    background: #06599F;
+    opacity:0.7;
+    border: 2px white double;
+    margin-right:230px;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+}
+
+to {
+    margin-left: 0%;
+}
+}
+
+
+
+
+.header label{
+    background: orange;
+    border-radius: 50%;
+    width: 20%;
+    overflow: auto;
+    opacity:0.8;
+    position: relative;
+    display: block;
+}
+
+.header a{
+    margin:6px;
+    height: 30px;
+    float:right;
+    width:120px;
+    padding:10px;
+    white-space: nowrap;
+    color: white;
+    background: #1E82CC;
+    cursor:pointer;
+    font-weight: bold;
+    opacity:0.9;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    font-family:"Cambria", "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", "Arial";
+}
+
+.header a:hover{
+    background: #3b5998;
+    /*    opacity: 1;*/
+}
+
+.header{
+
+    text-align: center;
+    color:white;
+    font-family: Timer new roman;
+    font-size: 20px;
+
+    height: 20%;
+    width: 100%;
+
+}
+
+.footer_left{
+    float:left;
+}
+.footer_right{
+    margin-bottom: 0px;
+}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+textLink{
+    color:white;
+    cursor:pointer;
+}
+
+
+/* ----------------------------------------------Copyright-------------------------------------*/
+
+#copyright{
+    padding:10px 0;
+    margin:5px;
+}
+
+#copyright p{
+    margin:5px;
+    padding:0;
+}
+
+
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{
+    display:block;
+    width:100%;
+    margin:0;
+    text-align:left;
+}
+
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{
+    /*    margin:0 0 15px 0;*/
+    padding:0;
+    font-size:20px;
+    font-weight:normal;
+    line-height:normal;
+}
+
+
+.fb{
+    border:none;
+    width:400px;
+    height:23px;
+    margin-left:150px;
+    color:white;
+    background-color: white;
+}
