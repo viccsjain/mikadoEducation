@@ -27,12 +27,12 @@ and open the template in the editor.
 
 
         function loadData(value) {
-            document.getElementById('home_div').style.display = "none";
+            //document.getElementById('home_div').style.display = "none";
             document.getElementById('aboutUs_div').style.display = "none";
             document.getElementById('gallary_div').style.display = "none";
             document.getElementById('keyFeatures_div').style.display = "none";
             document.getElementById('contactUs_div').style.display = "none";
-            document.getElementById('ourMission_div').style.display = "none";
+            //           document.getElementById('ourMission_div').style.display = "none";
 
             document.getElementById(value).style.display = "block";
         }
@@ -54,29 +54,65 @@ and open the template in the editor.
             <a href="#" onclick="loadData('contactUs_div');"> Contact us </a>
             <a href="#" onclick="loadData('keyFeatures_div');"> Key features </a>
             <a href="#" onclick="loadData('gallary_div');"> Gallery </a>
-
-            <a href="#" onclick="loadData('ourMission_div');"> Our mission </a>
+            <!--            <a href="#" onclick="loadData('ourMission_div');"> Our mission </a>-->
             <a href="#" onclick="loadData('home_div');"> Home </a>
 
         </div>
         <div class="body">
-            <div id="home_div" class="rightBody animated fadeIn" >
-                Home
+            <div id="home_div" class="animated fadeIn" >
             </div>
-            <div id="ourMission_div" class="rightBody animated fadeIn" style="display: none">
-                Our mission
-            </div>
+            <!--                        <div id="ourMission_div" class="rightBody animated fadeIn" style="display: none">
+                                        <h3>Our mission</h3>
+                                    </div> -->
             <div id="gallary_div" class="rightBody animated fadeIn" style="display: none">
-                Gallary
+                <h3>Gallary</h3>
             </div>
             <div id="keyFeatures_div" class="rightBody animated fadeIn" style="display: none">
-                Key features
+                <h3>Key features</h3>
+                <hr style="background:greenyellow">
+                <p class="keyFeatureDesc">
+                    We have introduced this organisation in the beautiful city of Udaipur with following key features</p>
+                <p class="keyFeaturesList">
+                <ol>
+                    <li> Managed by professionals Rationalised adoption of research done for kids
+                        <ul> Consistent research by the promoters</ul></li>
+                    <li> Excellent Infrastructure
+                        <ul>Exclusive premises</ul>
+                        <ul>Large playground</ul>
+                        <ul>Playground equipments (ISO marked products)</ul>
+                        <ul>Huge Indoor activity & play area Ample of toys (ISO marked products)</ul></li>
+                    <li> Well trained dedicated and qualified teaching staff</li>
+                    <li> Ideal Student-teacher ratio</li>
+                    <li> Smart Classes </li>
+                </ol>
+                </P>
             </div>
             <div id="contactUs_div" class="rightBody animated fadeIn" style="display: none">
-                Contact us
+                <h3>Contact us</h3>
+
             </div>
             <div id="aboutUs_div" class="rightBody animated fadeIn" style="display: none">
-                about us
+                <h3> About us </h3>
+                <hr style="background:greenyellow">
+                <br>
+                <P class="aboutUsDesc">
+                    We have been in education from past 7 years. We exactly know what is required at the later stages. However, Research shows that 90% of child's brain develop in first 6 years. We therefore aim to facilitate this upcoming generation with right means and resources through our experience and ideology. Through activities, we will involve, challenge, intrigue and assist children in ways that enhance their character and develop their minds and bodies.
+                    Established & managed by professionals, Mikado kids, practical approach will enable the kids to learn effectively by experiencing the basics of life. Our well facilitated daycare with homely environment is a perfect solution to rising demands of the working parents. We are :</P>
+                <span class="">
+                    <span class="aboutUsSpan aboutUsSpan_1">Ketan Jain
+                        <br><P class="degree desc_1"> CA M.Com </P>
+                    </span>
+                    <span class="aboutUsSpan aboutUsSpan_2">Ankit picholiya
+                        <br><P class="degree desc_1"> BE MBA </P>
+                    </span>
+                    <span class="aboutUsSpan aboutUsSpan_3">Gunjan porwal
+                        <br><P class="degree desc_1"> MBA </P>
+                    </span>
+                    <span class="aboutUsSpan aboutUsSpan_4">Siddharth singhvi
+                        <br><P class="degree desc_1"> CA CS LLB </P>
+                    </span>
+                </span>
+
             </div>
         </div>
         <div class="footer">

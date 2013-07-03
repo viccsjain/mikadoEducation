@@ -22,6 +22,7 @@ body{
     background-repeat: round;
     background-position-x: right;
     background-position-y: right;
+    font-family: calibri;
 
     height: 100%;
     width: 100%;
@@ -38,31 +39,37 @@ body{
         background-size: contain;  CSS3 */
 }
 
+
+
 .body{
     /*    width:100%;*/
     margin-left: 20px;
     height: 63%;
+
     /*    background: white;*/
 }
 
-.body h2{
-    width:5%;
-    color: red;
-    overflow: auto;
-}
-
-.body h2:hover{
-
-    width: 100%;
-    background: orange;
+.body h3{
+    color: greenyellow;
+    font-size: 40px;
+    margin:0px;
 
 }
+
+.body div{
+}
+
+
+.body h3:hover{
+
+}
+
 .footer{
 
     /*    text-shadow: 1px 1px 2px aqua;*/
     text-align: center;
     color:white;
-    font-family: Timer new roman;
+    font-family: Times new roman;
     font-size: 20px;
     opacity:0.7;
     height: 17%;
@@ -81,6 +88,7 @@ body{
 
 .footer a{
     color: white;
+    text-decoration: none;
 }
 
 .footer a:hover{
@@ -168,6 +176,7 @@ to {
     border-width: 2px;
     border-style: solid;
     font-family:"Cambria", "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", "Arial";
+    text-decoration: none;
 }
 
 .header a:hover{
@@ -179,7 +188,7 @@ to {
 
     text-align: center;
     color:white;
-    font-family: Timer new roman;
+    font-family: Times new roman;
     font-size: 20px;
 
     height: 20%;
@@ -241,4 +250,60 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     margin-left:150px;
     color:white;
     background-color: white;
+}
+
+.aboutUsSpan{
+    padding:20px;
+    font-size: 20px;
+    width:250px;
+    height:50px;
+    float:left;
+    Margin-top:20px;
+    Margin-right:20px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+ol{
+    color: orange;
+    font-size: 20px;
+    margin-left:100px;
+    font-family: calibri;
+    margin-right:100px;
+}
+
+.aboutUsSpan_1{
+    Margin-left:100px;
+    color: aqua;
+}
+
+.aboutUsSpan_2{
+    color: aqua;
+}
+.aboutUsSpan_3{
+    color: aqua;
+}
+.aboutUsSpan_4{
+    color: aqua;
+}
+
+
+.degree{
+    margin:0px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.keyFeatureDesc{
+    color: white;
+    font-size: 20px;
+    font-family: calibri;
+}
+
+.aboutUsDesc{
+    color: white;
+    font-size: 20px;
+    margin-left:100px;
+    font-family: calibri;
+    margin-right:100px;
 }
