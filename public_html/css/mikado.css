@@ -24,7 +24,7 @@ body{
     background-position-y: right;
     font-family: calibri;
 
-    height: 100%;
+    height: 97%;
     width: 100%;
 
     -webkit-background-size: cover;
@@ -44,7 +44,7 @@ body{
 .body{
     /*    width:100%;*/
     margin-left: 20px;
-    height: 63%;
+    height: 65%;
 
     /*    background: white;*/
 }
@@ -52,6 +52,13 @@ body{
 .body h3{
     color: greenyellow;
     font-size: 40px;
+    margin:0px;
+
+}
+
+.body h2{
+    color: greenyellow;
+    font-size: 32px;
     margin:0px;
 
 }
@@ -69,11 +76,22 @@ body{
     /*    text-shadow: 1px 1px 2px aqua;*/
     text-align: center;
     color:white;
+    position: fixed;
     font-family: Times new roman;
     font-size: 20px;
     opacity:0.7;
-    height: 17%;
-    /*    width: 100%;*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=70);
+
+    /* Netscape */
+    -moz-opacity: 0.7;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.7;
+    /*    height: 16%;*/
+    width: 100%;
     background: #06599F;
     -webkit-border-top-left-radius: 69%;
     -webkit-border-top-right-radius: 29%;
@@ -110,6 +128,16 @@ body{
     width:20%;
     background: orange;
     opacity:0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=80);
+
+    /* Netscape */
+    -moz-opacity: 0.8;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.8;
 
     border-color: red;
     border-width: 10px;
@@ -131,12 +159,87 @@ body{
     padding:10px 20px;
     background: #06599F;
     opacity:0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=70);
+
+    /* Netscape */
+    -moz-opacity: 0.7;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.7;
     border: 2px white double;
     margin-right:230px;
     animation-name: slidein;
     animation-duration: 3s;
 }
 
+
+.homeBody{
+    margin-right:230px;
+    height: 90%;
+    float:right;
+    width:80.15%;
+    /*    padding:10px 20px;*/
+    /*    background: #06599F;*/
+    opacity:0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=70);
+
+    /* Netscape */
+    -moz-opacity: 0.7;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.7;
+
+    /*    border: 2px white double;*/
+
+}
+
+.ourMissionDiv{
+    float:left;
+    height: 45%;
+    width:95%;
+    margin:10px;
+    padding:10px 20px;
+    background: #06599F;
+    border: 2px white double;
+}
+.downSection{
+    height: 45%;
+}
+.recentNewsDiv{
+    float:left;
+    width:22%;
+    height: 100%;
+    margin:10px;
+    padding:10px 20px;
+    background: #06599F;
+    border: 2px white double;
+}
+
+.indoorActivitiesDiv{
+    float:left;
+    width:32%;
+    height: 100%;
+    margin:10px;
+    padding:10px 20px;
+    background: #06599F;
+    border: 2px white double;
+}
+.outdoorActivitesDiv{
+    float:left;
+    height: 100%;
+    width:32%;
+    margin:10px;
+    padding:10px 20px;
+    background: #06599F;
+    border: 2px white double;
+
+}
 @keyframes slidein {
     from {
     margin-left: 100%;
@@ -156,14 +259,31 @@ to {
     width: 20%;
     overflow: auto;
     opacity:0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=80);
+
+    /* Netscape */
+    -moz-opacity: 0.8;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.8;
     position: relative;
     display: block;
 }
 
+.MenuClass{
+    position: Fixed;
+    z-index: 100;
+
+}
 .header a{
+
+    margin-top:35px;
     margin:6px;
     height: 30px;
-    float:right;
+    float:left;
     width:120px;
     padding:10px;
     white-space: nowrap;
@@ -172,20 +292,79 @@ to {
     cursor:pointer;
     font-weight: bold;
     opacity:0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=90);
+
+    /* Netscape */
+    -moz-opacity: 0.9;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.9;
+
     border-color: white;
     border-width: 2px;
     border-style: solid;
-    font-family:"Cambria", "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", "Arial";
+    font-family:"Calibri", "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", "Arial";
     text-decoration: none;
 }
+
+
+hr{
+    background-color: greenyellow;
+}
+
+/*ol
+{
+    list-style-image: url('../images/bullet-grey.png');
+
+}*/
 
 .header a:hover{
     background: #3b5998;
     /*    opacity: 1;*/
 }
 
-.header{
+.Header_school_Label{
+    /*    float:left;*/
+    margin:0px;
+    font-family: 'Prince Valiant';
+    color: brown;
+    opacity:0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 
+    /* IE 5-7 */
+    filter: alpha(opacity=80);
+
+    /* Netscape */
+    -moz-opacity: 0.8;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.8;
+
+    text-align: left;
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(right, #FFFFFF 0%, #06599F 200%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(right, #FFFFFF 0%, #06599F 200%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(right, #FFFFFF 0%, #06599F 200%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #FFFFFF), color-stop(2, #06599F));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #06599F 200%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to left, #FFFFFF 0%, #06599F 200%);
+}
+
+.header{
+    margin-top:20px;
     text-align: center;
     color:white;
     font-family: Times new roman;
@@ -197,7 +376,7 @@ to {
 }
 
 .footer_left{
-    float:left;
+    float:right;
 }
 .footer_right{
     margin-bottom: 0px;
@@ -262,15 +441,24 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     Margin-right:20px;
     border: 2px solid white;
     text-align: center;
+
 }
 
 ol{
-    color: orange;
+    color: whitesmoke;
     font-size: 20px;
     margin-left:100px;
     font-family: calibri;
-    margin-right:100px;
+    /*    margin-right:100px;*/
 }
+
+ul{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: calibri;
+    /*    margin-right:100px;*/
+}
+
 
 .aboutUsSpan_1{
     Margin-left:100px;
@@ -306,4 +494,84 @@ ol{
     margin-left:100px;
     font-family: calibri;
     margin-right:100px;
+}
+
+.GalleryBody{
+
+}
+
+
+
+.polaroid-images a
+{
+    background: white;
+    display: inline;
+    float: left;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+    position:relative;
+}
+
+.polaroid-images a:after {
+    color: #333;
+    font-size: 20px;
+    content: attr(title);
+    position: relative;
+    top:15px;
+}
+
+.polaroid-images img {
+    display: block;
+    width: inherit;
+}
+
+.polaroid-images a:nth-child(2n)
+{
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+.polaroid-images a:nth-child(3n) {
+    -webkit-transform: rotate(-24deg);
+    -moz-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+}
+.polaroid-images a:nth-child(4n)
+{
+    -webkit-transform: rotate(14deg);
+    -moz-transform: rotate(14deg);
+    transform: rotate(14deg);
+}
+.polaroid-images a:nth-child(5n)
+{
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+}
+
+.polaroid-images a:hover{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index:10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
+.testing{
+    width:200px;
+    height:200px;
 }

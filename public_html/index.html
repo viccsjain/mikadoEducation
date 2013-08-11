@@ -4,7 +4,7 @@ and open the template in the editor.
 -->
 <!DOCTYPE html>
 <html>
-    <title>Mikado School</title>
+    <title>Mikado Kids</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9">
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -20,20 +20,22 @@ and open the template in the editor.
 
 
     <script>
-
+        var url = window.location.toString();
         var rotate = false;
         var img_set = 1;
         var newImage;
-
+        var currentDiv = "1";
 
         function loadData(value) {
-            //document.getElementById('home_div').style.display = "none";
-            document.getElementById('aboutUs_div').style.display = "none";
-            document.getElementById('gallary_div').style.display = "none";
-            document.getElementById('keyFeatures_div').style.display = "none";
-            document.getElementById('contactUs_div').style.display = "none";
-            //           document.getElementById('ourMission_div').style.display = "none";
-
+//            document.getElementById('home_div').style.display = "none";
+//            document.getElementById('aboutUs_div').style.display = "none";
+//            document.getElementById('gallary_div').style.display = "none";
+//            document.getElementById('keyFeatures_div').style.display = "none";
+//            document.getElementById('contactUs_div').style.display = "none";
+//           document.getElementById('ourMission_div').style.display = "none";
+//            document.getElementById(currentDiv).className = "animated fadeInDown";
+            document.getElementById(currentDiv).style.display = "none";
+            currentDiv = value;
             document.getElementById(value).style.display = "block";
         }
 
@@ -41,33 +43,106 @@ and open the template in the editor.
             img_set = Math.floor((Math.random() * 6) + 1);
             newImage = 'url(images//' + img_set + '.jpg)';
             document.body.style.backgroundImage = newImage;
+            var divId = String(url).split("#", 2);
+            document.getElementById(currentDiv).style.display = "none";
+            if (divId[1] == null)
+                currentDiv = "1";
+            else
+                currentDiv = divId[1].toString();
+            document.getElementById(currentDiv).style.display = "block";
         }
+
     </script>
 
     <body id="page" onload="setbackGround();">
+
         <div class="header">
             <div class="footer_left">
                 <img src="images//mikado.png" height="150px" width="350px"/>
             </div>
 
-            <a href="#" onclick="loadData('aboutUs_div');"> About us </a>
-            <a href="#" onclick="loadData('contactUs_div');"> Contact us </a>
-            <a href="#" onclick="loadData('keyFeatures_div');"> Key features </a>
-            <a href="#" onclick="loadData('gallary_div');"> Gallery </a>
-            <!--            <a href="#" onclick="loadData('ourMission_div');"> Our mission </a>-->
-            <a href="#" onclick="loadData('home_div');"> Home </a>
+            <!--            <div class="Header_school_Label">
+                            <h1>Mikado Kids</h1>
+                        </div>-->
+            <div class="MenuClass">
+                <!--            <a href="#" onclick="loadData('ourMission_div');"> Our mission </a>-->
+                <a href="#1" onclick="loadData('1');"> Home </a>
+                <a href="#2" onclick="loadData('2');"> Key features </a>
+                <a href="#3" onclick="loadData('3');"> Gallery </a>
+                <a href="#4" onclick="loadData('4');"> Contact us </a>
+                <a href="#5" onclick="loadData('5');"> About us </a>
+            </div>
 
         </div>
         <div class="body">
-            <div id="home_div" class="animated fadeIn" >
+            <div id="1" class="homeBody animated fadeInLeftBig" style="display: none">
+                <div class="ourMissionDiv">
+                    <h3>Our Mission</h3>
+                    <hr>
+                    <P class="aboutUsDesc">
+                        We have been in education from past 7 years. We exactly know what is required at the later stages. However, Research shows that 90% of child's brain develop in first 6 years. We therefore aim to facilitate this upcoming generation with right means and resources through our experience and ideology. Through activities, we will involve, challenge, intrigue and assist children in ways that enhance their character and develop their minds and bodies.
+                    </p>
+                </div>
+                <div class="downSection">
+                    <div class="indoorActivitiesDiv">
+                        <h2>Indoor Activities</h2>
+                        <hr>
+                        <ul>
+                            <li>Organized free play
+                            </li>
+                            <li>Dramatic play
+                            </li>
+                            <li> Circle time</li>
+                            <li> Creative art projects</li>
+                            <li> Science / Social studies</li>
+                            <li> Activities</li>
+
+                        </ul>
+                    </div>
+                    <div class="outdoorActivitesDiv">
+                        <h2>Outdoor Activities</h2>
+                        <hr>
+                        <ul>
+                            <li>Playground activities
+                            </li>
+                            <li>Nature walks
+                            </li>
+                            <li> Gardening</li>
+                            <li> Special enrichment programs</li>
+                            <li> Field trips</li>
+                            <li> Special guest visitors</li>
+
+                        </ul>
+                    </div>
+                    <div class="recentNewsDiv">
+                        <h2>Recent News</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div>
+
+                </div>
             </div>
-            <!--                        <div id="ourMission_div" class="rightBody animated fadeIn" style="display: none">
-                                        <h3>Our mission</h3>
-                                    </div> -->
-            <div id="gallary_div" class="rightBody animated fadeIn" style="display: none">
-                <h3>Gallary</h3>
-            </div>
-            <div id="keyFeatures_div" class="rightBody animated fadeIn" style="display: none">
+            <div id="3" class="GalleryBody animated fadeInLeftBig" style="display: none">
+                <div class="polaroid-images" style="height:100%">
+                    <a title="Red day"><img id="sch_1" height="200" src="images/school_1.jpg" alt="Red day" title="Red day"/></a>
+                    <a title="Red day"><img height="200" src="images/school_2.jpg" alt="Island" title="Island" /></a>
+                    <a title="School Premises"><img height="200" src="images/school_3.jpg" alt="Islands Forest" title="Islands Forest" /></a>
+                    <a title="Celebration Mall, Udaipur"><img height="200" src="images/school_4.jpg" alt="Decking" title="Decking" /></a>
+                    <a title="Prize winner"><img height="200" src="images/school_5.jpg" alt="Lake" title="Lake" /></a>
+                    <a title="Red day"><img height="200" src="images/school_6.jpg" alt="Mountains" title="Mountains" /></a>
+                    <a title="Lunch time"><img height="200" src="images/school_7.jpg" alt="Forest" title="Forest" /></a>
+                    <a title="First Day"><img height="200" src="images/school_8.jpg" alt="Coast Valley" title="Coast Valley" /></a>
+                    <a title="Red day"><img height="200" src="images/school_1.jpg" alt="Red day" title="Red day" /></a>
+                    <a title="Red day"><img height="200" src="images/school_2.jpg" alt="Island" title="Island" /></a>
+                    <a title="School Premises"><img height="200" src="images/school_3.jpg" alt="Islands Forest" title="Islands Forest" /></a>
+                    <a title="Celebration Mall, Udaipur"><img height="200" src="images/school_4.jpg" alt="Decking" title="Decking" /></a>
+                    <a title="Prize winner"><img height="200" src="images/school_5.jpg" alt="Lake" title="Lake" /></a>
+                    <a title="Red day"><img height="200" src="images/school_6.jpg" alt="Mountains" title="Mountains" /></a>
+                    <a title="Lunch time"><img height="200" src="images/school_7.jpg" alt="Forest" title="Forest" /></a>
+                    <a title="First Day"><img height="200" src="images/school_8.jpg" alt="Coast Valley" title="Coast Valley" /></a>
+                </div>            </div>
+            <div id="2" class="rightBody animated fadeInLeftBig" style="display: none">
                 <h3>Key features</h3>
                 <hr style="background:greenyellow">
                 <p class="keyFeatureDesc">
@@ -75,23 +150,23 @@ and open the template in the editor.
                 <p class="keyFeaturesList">
                 <ol>
                     <li> Managed by professionals Rationalised adoption of research done for kids
-                        <ul> Consistent research by the promoters</ul></li>
+                        <ul> <li>Consistent research by the promoters</li></ul></li>
                     <li> Excellent Infrastructure
-                        <ul>Exclusive premises</ul>
-                        <ul>Large playground</ul>
-                        <ul>Playground equipments (ISO marked products)</ul>
-                        <ul>Huge Indoor activity & play area Ample of toys (ISO marked products)</ul></li>
+                        <ul><li>Exclusive premises</li></ul>
+                        <ul><li>Large playground</li></ul>
+                        <ul><li>Playground equipments (ISO marked products)</li></ul>
+                        <ul><li>Huge Indoor activity & play area Ample of toys (ISO marked products)</li></ul></li>
                     <li> Well trained dedicated and qualified teaching staff</li>
                     <li> Ideal Student-teacher ratio</li>
                     <li> Smart Classes </li>
                 </ol>
                 </P>
             </div>
-            <div id="contactUs_div" class="rightBody animated fadeIn" style="display: none">
+            <div id="4" class="rightBody animated fadeInLeftBig" style="display: none">
                 <h3>Contact us</h3>
 
             </div>
-            <div id="aboutUs_div" class="rightBody animated fadeIn" style="display: none">
+            <div id="5" class="rightBody animated fadeInLeftBig" style="display: none;">
                 <h3> About us </h3>
                 <hr style="background:greenyellow">
                 <br>
@@ -99,18 +174,18 @@ and open the template in the editor.
                     We have been in education from past 7 years. We exactly know what is required at the later stages. However, Research shows that 90% of child's brain develop in first 6 years. We therefore aim to facilitate this upcoming generation with right means and resources through our experience and ideology. Through activities, we will involve, challenge, intrigue and assist children in ways that enhance their character and develop their minds and bodies.
                     Established & managed by professionals, Mikado kids, practical approach will enable the kids to learn effectively by experiencing the basics of life. Our well facilitated daycare with homely environment is a perfect solution to rising demands of the working parents. We are :</P>
                 <span class="">
-                    <span class="aboutUsSpan aboutUsSpan_1">Ketan Jain
+                    <div class="aboutUsSpan aboutUsSpan_1">Ketan Jain
                         <br><P class="degree desc_1"> CA M.Com </P>
-                    </span>
-                    <span class="aboutUsSpan aboutUsSpan_2">Ankit picholiya
+                    </div>
+                    <div class="aboutUsSpan aboutUsSpan_2">Ankit picholiya
                         <br><P class="degree desc_1"> BE MBA </P>
-                    </span>
-                    <span class="aboutUsSpan aboutUsSpan_3">Gunjan porwal
+                    </div>
+                    <div class="aboutUsSpan aboutUsSpan_3">Gunjan porwal
                         <br><P class="degree desc_1"> MBA </P>
-                    </span>
-                    <span class="aboutUsSpan aboutUsSpan_4">Siddharth singhvi
+                    </div>
+                    <div class="aboutUsSpan aboutUsSpan_4">Siddharth singhvi
                         <br><P class="degree desc_1"> CA CS LLB </P>
-                    </span>
+                    </div>
                 </span>
 
             </div>
@@ -124,8 +199,8 @@ and open the template in the editor.
             </div>
             <div id="copyright">
                 <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="index.html">mikadoeducation.co.in</a></p>
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/MikadoKids&show_faces=false"
-                        scrolling="no" frameborder="0" class="fb" ></iframe>
+                <!--                <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/MikadoKids&show_faces=false"
+                                        scrolling="no" frameborder="0" class="fb" ></iframe>-->
                 <p class="fl_right">Created by<a href="https://www.facebook.com/vikkychhajer" class="textLink" target="_blank">Vikky Chhajer</a></p>
                 <br class="clear" />
             </div>
